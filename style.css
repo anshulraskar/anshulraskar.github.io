@@ -1,0 +1,118 @@
+.theme-main {
+    background-color: #e27676;
+}
+
+.theme-dark-accent {
+    background-color: #b83c51;
+}
+
+.theme-dark-shades {
+    background-color: #271c2b;
+}
+
+.theme-light-accent {
+    background-color: #a091ac;
+}
+
+.theme-light-accent2 {
+    background-color: #7eb3a2;
+}
+
+.theme-light-shades {
+    background-color: #f4f6f4;
+}
+
+.title-header {
+    padding-top: 2em;
+}
+
+.title-header.circuit {
+    background-image: linear-gradient(rgba(226, 116, 116, .5), rgba(226, 116, 116, .5)), url(./images/circuit\ board.jpg!d);
+    background-size: cover;
+}
+
+.small-sq-img {
+    width: 10em;
+    height: 10em;
+    margin-right: 1em;
+}
+
+.main-page-first-section {
+    visibility: visible;
+}
+
+.main-page-nth-section {
+    visibility: visible;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: top 0.3s;
+}
+
+ ::-webkit-scrollbar {
+    width: 6px;
+}
+
+
+/*the scrollbar.*/
+
+ ::-webkit-scrollbar-track {
+    display: inline;
+}
+
+
+/*the track (progress bar) of the scrollbar.*/
+
+
+/* ::-webkit-scrollbar-button {
+    
+} */
+
+
+/*the buttons on the scrollbar (arrows pointing upwards and downwards).*/
+
+ ::-webkit-scrollbar-thumb {
+    background-color: rgba(75, 75, 75, .5);
+    border-radius: 100px;
+}
+
+
+/*the draggable scrolling handle.*/
+
+ ::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(45, 45, 45, .5);
+}
+
+
+/*the draggable scrolling handle on hover.*/
+
+
+/* ::-webkit-scrollbar-track-piece {} */
+
+
+/*the track (progress bar) NOT covered by the handle.*/
+
+
+/* ::-webkit-scrollbar-corner {} */
+
+
+/*the bottom corner of the scrollbar, where both horizontal and vertical scrollbars meet. */
+
+
+/* ::-webkit-resizer {} */
+
+
+/*the draggable resizing handle that appears at the bottom corner of some elements.*/
+
+.bg-microscope {
+    background-image: linear-gradient(rgba(52, 58, 64, .7), rgba(52, 58, 64, .7)), url(./images/microscope.jpg!d);
+    background-size: cover;
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: overlay;
+}
