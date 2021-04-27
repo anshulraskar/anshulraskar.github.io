@@ -28,38 +28,105 @@
             background-color: #a091ac;
         }
         
+        .theme-light-accent2 {
+            background-color: #7eb3a2;
+        }
+        
         .theme-light-shades {
             background-color: #f4f6f4;
         }
         
         .title-header {
-            background-image: linear-gradient( rgba(226, 116, 116, .5), rgba(226, 116, 116, .5)), url(./images/circuit\ board.jpg!d);
+            padding-top: 2em;
+        }
+        
+        .title-header.circuit {
+            background-image: linear-gradient(rgba(226, 116, 116, .5), rgba(226, 116, 116, .5)), url(./images/circuit\ board.jpg!d);
             background-size: cover;
         }
         
         .small-sq-img {
             width: 10em;
             height: 10em;
+            margin-right: 1em;
+        }
+        
+        .main-page-first-section {
+            visibility: visible;
+        }
+        
+        .main-page-nth-section {
+            visibility: visible;
+        }
+        
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            transition: top 0.3s;
+        }
+        
+         ::-webkit-scrollbar {
+            width: 6px;
+        }
+        /*the scrollbar.*/
+        
+         ::-webkit-scrollbar-track {
+            display: inline;
+        }
+        /*the track (progress bar) of the scrollbar.*/
+        /* ::-webkit-scrollbar-button {
+            
+        } */
+        /*the buttons on the scrollbar (arrows pointing upwards and downwards).*/
+        
+         ::-webkit-scrollbar-thumb {
+            background-color: rgba(75, 75, 75, .5);
+            border-radius: 100px;
+        }
+        /*the draggable scrolling handle.*/
+        
+         ::-webkit-scrollbar-thumb:hover {
+            background-color: rgba(65, 65, 65, .5);
+        }
+        /*the draggable scrolling handle on hover.*/
+        /* ::-webkit-scrollbar-track-piece {} */
+        /*the track (progress bar) NOT covered by the handle.*/
+        /* ::-webkit-scrollbar-corner {} */
+        /*the bottom corner of the scrollbar, where both horizontal and vertical scrollbars meet. */
+        /* ::-webkit-resizer {} */
+        /*the draggable resizing handle that appears at the bottom corner of some elements.*/
+        
+        .bg-microscope {
+            background-image: linear-gradient(rgba(52, 58, 64, .7), rgba(52, 58, 64, .7)), url(./images/microscope.jpg!d);
+            background-size: cover;
+        }
+        
+        body {
+            overflow-x: hidden;
+            overflow-y: overlay;
         }
     </style>
 </head>
 
 <body class="bg-dark">
 
-    <nav class="navbar navbar-expand-lg navbar-light sticky-top theme-dark-shades" style="margin-bottom: 0px;">
+    <nav class="navbar navbar-expand-sm navbar-dark theme-dark-shades">
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="./">Home</a>
+                    <a class="nav-link" href="./">Home</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link text-white" href="#">Contact Me<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#">Contact Me<span class="sr-only">(current)</span></a>
                 </li>
             </ul>
         </div>
     </nav>
 
-    <div class="container p-4 text-white">
-        <h1 class="display-1">Page Not Complete</h1>
+    <div class="title-header">
+        <div class="container p-4 text-white">
+            <h1 class="display-1">Page Not Complete</h1>
+        </div>
     </div>
 </body>

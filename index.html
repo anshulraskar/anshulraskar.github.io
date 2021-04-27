@@ -41,6 +41,10 @@
         }
         
         .title-header {
+            padding-top: 2em;
+        }
+        
+        .title-header.circuit {
             background-image: linear-gradient(rgba(226, 116, 116, .5), rgba(226, 116, 116, .5)), url(./images/circuit\ board.jpg!d);
             background-size: cover;
         }
@@ -59,36 +63,74 @@
             visibility: visible;
         }
         
-        body {
-            overflow-x: hidden;
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            transition: top 0.3s;
+        }
+        
+         ::-webkit-scrollbar {
+            width: 6px;
+        }
+        /*the scrollbar.*/
+        
+         ::-webkit-scrollbar-track {
+            display: inline;
+        }
+        /*the track (progress bar) of the scrollbar.*/
+        /* ::-webkit-scrollbar-button {
+            
+        } */
+        /*the buttons on the scrollbar (arrows pointing upwards and downwards).*/
+        
+         ::-webkit-scrollbar-thumb {
+            background-color: rgba(75, 75, 75, .5);
+            border-radius: 100px;
+        }
+        /*the draggable scrolling handle.*/
+        
+         ::-webkit-scrollbar-thumb:hover {
+            background-color: rgba(65, 65, 65, .5);
+        }
+        /*the draggable scrolling handle on hover.*/
+        /* ::-webkit-scrollbar-track-piece {} */
+        /*the track (progress bar) NOT covered by the handle.*/
+        /* ::-webkit-scrollbar-corner {} */
+        /*the bottom corner of the scrollbar, where both horizontal and vertical scrollbars meet. */
+        /* ::-webkit-resizer {} */
+        /*the draggable resizing handle that appears at the bottom corner of some elements.*/
+        
+        .bg-microscope {
             background-image: linear-gradient(rgba(52, 58, 64, .7), rgba(52, 58, 64, .7)), url(./images/microscope.jpg!d);
             background-size: cover;
+        }
+        
+        body {
+            overflow-x: hidden;
+            overflow-y: overlay;
         }
     </style>
 
 
 </head>
 
-<body class="bg-dark">
+<body class="bg-microscope">
 
-    <script>
-        AOS.init();
-    </script>
-
-    <nav class="navbar navbar-expand-lg navbar-light sticky-top theme-dark-shades" style="margin-bottom: 0px;">
+    <nav class="navbar navbar-expand-sm navbar-dark theme-dark-shades">
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link text-white" href="#">Home<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="./contact.html">Contact Me</a>
+                    <a class="nav-link" href="./contact.html">Contact Me</a>
                 </li>
             </ul>
         </div>
     </nav>
 
-    <div class="title-header">
+    <div class="title-header circuit">
         <div class="container p-4 text-white">
             <h1 class="display-1">Anshul Raskar (WIP)</h1>
             <h3 class="font-weight-light">Welcome to my website.</h3>
@@ -102,42 +144,63 @@
             <li>I'm a second year student at the University of Waterloo studying Biomedical Sciences.</li>
             <li>I'm interested in computer science and robotics.</li>
             <li>I'm an avid fiction reader. The latest books I've read are 13 Reasons Why (Jay Asher) and Thin Space (Jody Casella)</li>
-            <li>Currently taking Classical Mythology</li>
+            <li>Point 4</li>
         </div>
     </div>
 
     <div data-aos="fade-left" class="container theme-light-accent2 float-right p-3 my-3 text-white main-page-nth-section">
-        <img class="float-left small-sq-img" src="./images/waterloo logo.png" alt="University of Waterloo logo">
-        <h2 class="font-italic float-left">About Me.</h2>
+        <img class="float-left small-sq-img" src="img.png" alt="img here">
+        <h2 class="font-italic float-left">Extracurriculars</h2>
         <div class="float-left">
-            <li>I'm a second year student at the University of Waterloo studying Biomedical Sciences.</li>
-            <li>I'm interested in computer science and robotics.</li>
-            <li>I'm an avid fiction reader. The latest books I've read are 13 Reasons Why (Jay Asher) and Thin Space (Jody Casella)</li>
-            <li>Currently taking Classical Mythology</li>
+            <li>Point 1</li>
+            <li>Point 2</li>
+            <li>Point 3</li>
+            <li>Point 4</li>
         </div>
     </div>
 
     <div data-aos="fade-right" class="container theme-light-accent float-left p-3 my-3 text-white main-page-nth-section">
-        <img class="float-right small-sq-img" src="./images/waterloo logo.png" alt="University of Waterloo logo">
-        <h2 class="font-italic float-left">About Me.</h2>
+        <img class="float-right small-sq-img" src="img.png" alt="img here">
+        <h2 class="font-italic float-left">Subheading 3</h2>
         <div class="float-left">
-            <li>I'm a second year student at the University of Waterloo studying Biomedical Sciences.</li>
-            <li>I'm interested in computer science and robotics.</li>
-            <li>I'm an avid fiction reader. The latest books I've read are 13 Reasons Why (Jay Asher) and Thin Space (Jody Casella)</li>
-            <li>Currently taking Classical Mythology</li>
+            <li>Point 1</li>
+            <li>Point 2</li>
+            <li>Point 3</li>
+            <li>Point 4</li>
         </div>
     </div>
 
     <div data-aos="fade-left" class="container theme-light-accent2 float-right p-3 my-3 text-white main-page-nth-section">
-        <img class="float-left small-sq-img" src="./images/waterloo logo.png" alt="University of Waterloo logo">
-        <h2 class="font-italic float-left">About Me.</h2>
+        <img class="float-left small-sq-img" src="img.png" alt="img here">
+        <h2 class="font-italic float-left">Subheading 4</h2>
         <div class="float-left">
-            <li>I'm a second year student at the University of Waterloo studying Biomedical Sciences.</li>
-            <li>I'm interested in computer science and robotics.</li>
-            <li>I'm an avid fiction reader. The latest books I've read are 13 Reasons Why (Jay Asher) and Thin Space (Jody Casella)</li>
-            <li>Currently taking Classical Mythology</li>
+            <li>Point 1</li>
+            <li>Point 2</li>
+            <li>Point 3</li>
+            <li>Point 4</li>
         </div>
     </div>
+
+
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+
+            if (currentScrollPos - prevScrollpos > 50) {
+                document.getElementsByClassName("navbar")[0].style.top = "-3.5em";
+                prevScrollpos = currentScrollPos;
+            } else if (currentScrollPos - prevScrollpos < 0) {
+                document.getElementsByClassName("navbar")[0].style.top = "0";
+                prevScrollpos = currentScrollPos;
+            }
+
+        }
+    </script>
 </body>
 
 </html>
