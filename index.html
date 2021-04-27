@@ -9,6 +9,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <title>Anshul Raskar</title>
 
     <style>
@@ -28,18 +32,37 @@
             background-color: #a091ac;
         }
         
+        .theme-light-accent2 {
+            background-color: #7eb3a2;
+        }
+        
         .theme-light-shades {
             background-color: #f4f6f4;
         }
         
         .title-header {
-            background-image: linear-gradient( rgba(226, 116, 116, .5), rgba(226, 116, 116, .5)), url(https://c.pxhere.com/photos/1c/4d/electronics_board_electrical_engineering_circuits_circuit_technology_components_tin-1202284.jpg!d);
+            background-image: linear-gradient(rgba(226, 116, 116, .5), rgba(226, 116, 116, .5)), url(./images/circuit\ board.jpg!d);
             background-size: cover;
         }
         
         .small-sq-img {
             width: 10em;
             height: 10em;
+            margin-right: 1em;
+        }
+        
+        .main-page-first-section {
+            visibility: visible;
+        }
+        
+        .main-page-nth-section {
+            visibility: visible;
+        }
+        
+        body {
+            overflow-x: hidden;
+            background-image: linear-gradient(rgba(52, 58, 64, .7), rgba(52, 58, 64, .7)), url(./images/microscope.jpg!d);
+            background-size: cover;
         }
     </style>
 
@@ -47,6 +70,10 @@
 </head>
 
 <body class="bg-dark">
+
+    <script>
+        AOS.init();
+    </script>
 
     <nav class="navbar navbar-expand-lg navbar-light sticky-top theme-dark-shades" style="margin-bottom: 0px;">
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -67,17 +94,50 @@
             <h3 class="font-weight-light">Welcome to my website.</h3>
         </div>
     </div>
-    <div class="container theme-light-accent float-left p-3 my-3 text-white">
-        <img class="float-right small-sq-img" src="https://upload.wikimedia.org/wikipedia/en/thumb/6/6e/University_of_Waterloo_seal.svg/1200px-University_of_Waterloo_seal.svg.png" alt="University of Waterloo logo">
-        <h2 class="font-italic font-">About Me.</h2>
-        <ul type="none">
+
+    <div data-aos="fade-right" class="container theme-light-accent float-left p-3 my-3 text-white main-page-first-section">
+        <img class="float-right small-sq-img" src="./images/waterloo logo.png" alt="University of Waterloo logo">
+        <h2 class="font-italic float-left">About Me.</h2>
+        <div class="float-left">
             <li>I'm a second year student at the University of Waterloo studying Biomedical Sciences.</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-            <li>Item 4</li>
-        </ul>
+            <li>I'm interested in computer science and robotics.</li>
+            <li>I'm an avid fiction reader. The latest books I've read are 13 Reasons Why (Jay Asher) and Thin Space (Jody Casella)</li>
+            <li>Currently taking Classical Mythology</li>
+        </div>
     </div>
 
+    <div data-aos="fade-left" class="container theme-light-accent2 float-right p-3 my-3 text-white main-page-nth-section">
+        <img class="float-left small-sq-img" src="./images/waterloo logo.png" alt="University of Waterloo logo">
+        <h2 class="font-italic float-left">About Me.</h2>
+        <div class="float-left">
+            <li>I'm a second year student at the University of Waterloo studying Biomedical Sciences.</li>
+            <li>I'm interested in computer science and robotics.</li>
+            <li>I'm an avid fiction reader. The latest books I've read are 13 Reasons Why (Jay Asher) and Thin Space (Jody Casella)</li>
+            <li>Currently taking Classical Mythology</li>
+        </div>
+    </div>
+
+    <div data-aos="fade-right" class="container theme-light-accent float-left p-3 my-3 text-white main-page-nth-section">
+        <img class="float-right small-sq-img" src="./images/waterloo logo.png" alt="University of Waterloo logo">
+        <h2 class="font-italic float-left">About Me.</h2>
+        <div class="float-left">
+            <li>I'm a second year student at the University of Waterloo studying Biomedical Sciences.</li>
+            <li>I'm interested in computer science and robotics.</li>
+            <li>I'm an avid fiction reader. The latest books I've read are 13 Reasons Why (Jay Asher) and Thin Space (Jody Casella)</li>
+            <li>Currently taking Classical Mythology</li>
+        </div>
+    </div>
+
+    <div data-aos="fade-left" class="container theme-light-accent2 float-right p-3 my-3 text-white main-page-nth-section">
+        <img class="float-left small-sq-img" src="./images/waterloo logo.png" alt="University of Waterloo logo">
+        <h2 class="font-italic float-left">About Me.</h2>
+        <div class="float-left">
+            <li>I'm a second year student at the University of Waterloo studying Biomedical Sciences.</li>
+            <li>I'm interested in computer science and robotics.</li>
+            <li>I'm an avid fiction reader. The latest books I've read are 13 Reasons Why (Jay Asher) and Thin Space (Jody Casella)</li>
+            <li>Currently taking Classical Mythology</li>
+        </div>
+    </div>
 </body>
 
 </html>
