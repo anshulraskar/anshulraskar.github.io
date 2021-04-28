@@ -103,6 +103,15 @@
     margin-right: 2.5rem;
 }
 
+.fade-scroll {
+    opacity: 0;
+    transition: all .8s;
+}
+
+.fade-scroll.title-header {
+    opacity: 1;
+}
+
 ::-webkit-scrollbar {
     width: 0px;
 }
