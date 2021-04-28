@@ -18,14 +18,16 @@ pageContent.onscroll = function() {
 
     $(".fade-scroll").each(function() {
         if (pageTop <= $(this).position().top && $(this).position().top + $(this).height() <= pageBottom) {
-            $(this).animate({
-                opacity: '1 '
-            }, .8, "swing");
+            $(this).addClass("visible");
+            // $(this).animate({
+            //     opacity: '1 '
+            // }, .8, "swing");
 
-        } else {;
-            $(this).animate({
-                opacity: '.1'
-            }, .8);
+        } else {
+            $(this).removeClass("visible");
+            // $(this).animate({
+            //     opacity: '.1'
+            // }, .8);
         }
     });
 }
