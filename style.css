@@ -34,7 +34,7 @@
 .navbar {
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 100vw;
     transition: top 0.3s;
     background-color: rgb(var(--theme-dark-shades));
     z-index: 9999;
@@ -43,13 +43,16 @@
 .page-content {
     position: relative;
     overflow-y: scroll;
+    overflow-x: hidden;
+    height: 100vh;
     scroll-snap-type: y mandatory;
 }
 
 .title-header {
-    max-height: 100vh;
+    max-height: 100vw;
     padding-top: 44vh;
     padding-bottom: 36vh;
+    scroll-snap-align: start;
 }
 
 .title-header.circuit {
@@ -59,7 +62,7 @@
 
 .main-page.popup {
     width: 90vw;
-    scroll-snap-align: start;
+    scroll-snap-align: center;
 }
 
 .main-page.popup.left {

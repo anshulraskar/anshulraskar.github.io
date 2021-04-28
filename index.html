@@ -12,12 +12,11 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <!-- AOS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
 
     <!-- Custom -->
     <link rel="stylesheet" href="./style.css">
-    <script src="./js/aos.js"></script>
 
     <title>Anshul Raskar</title>
 
@@ -44,7 +43,7 @@
             </div>
         </div>
 
-        <div data-aos="fade-up-right" data-aos-duration="750" data-aos-anchor-placement="bottom-bottom" class="float-left p-3 my-3 text-white main-page popup left">
+        <div class="float-left p-3 my-3 text-white main-page popup left">
             <img class="float-right small-sq-img" src="./images/waterloo logo.png" alt="University of Waterloo logo">
             <h2 class="header text">About Me.</h2>
             <div class="content text">
@@ -55,7 +54,7 @@
             </div>
         </div>
 
-        <div data-aos="fade-up-left" data-aos-duration="750" data-aos-anchor-placement="bottom-bottom" class="float-right p-3 my-3 text-white main-page popup nth-section right">
+        <div class="float-right p-3 my-3 text-white main-page popup nth-section right">
             <img class="float-left small-sq-img" src="./images/sample.jpg" alt="img here">
             <h2 class="header text">Extracurriculars.</h2>
             <div class="content text">
@@ -66,7 +65,7 @@
             </div>
         </div>
 
-        <div data-aos="fade-up-right" data-aos-duration="750" data-aos-anchor-placement="bottom-bottom" class="float-left p-3 my-3 text-white main-page popup nth-section left">
+        <div class="float-left p-3 my-3 text-white main-page popup nth-section left">
             <img class="float-right small-sq-img" src="./images/sample.jpg" alt="img here">
             <h2 class="header text">Hobbies.</h2>
             <div class="content text">
@@ -77,7 +76,7 @@
             </div>
         </div>
 
-        <div data-aos="fade-up-left" data-aos-duration="750" data-aos-anchor-placement="bottom-bottom" class="float-right p-3 my-3 text-white main-page popup nth-section right">
+        <div class="float-right p-3 my-3 text-white main-page popup nth-section right">
             <img class="float-left small-sq-img" src="./images/sample.jpg" alt="img here">
             <h2 class="header text">Subheading 4</h2>
             <div class="content text">
@@ -89,22 +88,11 @@
         </div>
     </div>
 
-    <script>
-        /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
-        var prevScrollpos = window.pageYOffset;
-        window.onscroll = function() {
-            var currentScrollPos = window.pageYOffset;
 
-            if (currentScrollPos - prevScrollpos > 50) {
-                document.getElementsByClassName("navbar")[0].style.top = "-3.5em";
-                prevScrollpos = currentScrollPos;
-            } else if (currentScrollPos - prevScrollpos < 0) {
-                document.getElementsByClassName("navbar")[0].style.top = "0";
-                prevScrollpos = currentScrollPos;
-            }
+    <!-- JS Imports -->
+    <script src="./js/navbar.js"></script>
+    <!-- <script src="./js/aos.js"></script> -->
 
-        }
-    </script>
 </body>
 
 </html>
