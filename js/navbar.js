@@ -5,7 +5,7 @@ var prevScrollpos = pageContent.scrollTop;
 pageContent.onscroll = function() {
     var currentScrollPos = pageContent.scrollTop;
     if (currentScrollPos > prevScrollpos) {
-        navbar.style.top = "-3.5em";
+        navbar.style.top = `-${navbar.clientHeight}px`;
     } else {
         navbar.style.top = "0";
     }
