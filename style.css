@@ -42,13 +42,14 @@
 
 .page-content {
     position: relative;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
 }
 
 .title-header {
     max-height: 100vh;
     padding-top: 44vh;
     padding-bottom: 36vh;
-    scroll-snap-align: start;
 }
 
 .title-header.circuit {
@@ -57,12 +58,8 @@
 }
 
 .main-page.popup {
-    scroll-snap-align: start;
     width: 90vw;
-}
-
-.main-page.popup.nth-section {
-    opacity: 100;
+    scroll-snap-align: start;
 }
 
 .main-page.popup.left {
@@ -74,16 +71,18 @@
 }
 
 .main-page.popup .header {
-    font-family: 'Segoe UI';
     font-weight: 300;
     font-size: 4rem;
 }
 
 .main-page.popup .content {
-    font-family: 'Segoe UI';
     font-weight: 375;
     font-size: 1.8rem;
     line-height: 1.8;
+}
+
+.main-page.popup .text {
+    font-family: 'Segoe UI';
 }
 
 .small-sq-img {
@@ -108,9 +107,4 @@
 .bg-microscope {
     background-image: linear-gradient(rgba(52, 58, 64, .7), rgba(52, 58, 64, .7)), url(./images/microscope.jpg!d);
     background-size: cover;
-}
-
-body {
-    overflow-x: hidden;
-    overflow-y: overlay;
 }

@@ -17,6 +17,7 @@
 
     <!-- Custom -->
     <link rel="stylesheet" href="./style.css">
+    <script src="./js/aos.js"></script>
 
     <title>Anshul Raskar</title>
 
@@ -36,17 +37,17 @@
     </nav>
 
     <div class="page-content">
-        <div data-aos="zoom-in-up" data-aos-once="true" class="title-header circuit">
+        <div class="title-header circuit">
             <div class="container p-4 text-white">
                 <h1 class="display-1">Anshul Raskar (WIP)</h1>
                 <h3 class="font-weight-light">Welcome to my website.</h3>
             </div>
         </div>
 
-        <div data-aos="fade-up-right" data-aos-duration="750" class="float-left p-3 my-3 text-white main-page popup left">
+        <div data-aos="fade-up-right" data-aos-duration="750" data-aos-anchor-placement="bottom-bottom" class="float-left p-3 my-3 text-white main-page popup left">
             <img class="float-right small-sq-img" src="./images/waterloo logo.png" alt="University of Waterloo logo">
-            <h2 class="header float-left">About Me.</h2>
-            <div class="content float-left">
+            <h2 class="header text">About Me.</h2>
+            <div class="content text">
                 <p>I'm a second year student at the University of Waterloo studying Biomedical Sciences.</p>
                 <p>I'm interested in computer science and robotics.</p>
                 <p>I'm an avid fiction reader. The latest books I've read are 13 Reasons Why (Jay Asher) and Everything Everything (Nicola Yoon)</p>
@@ -54,10 +55,10 @@
             </div>
         </div>
 
-        <div data-aos="fade-up-left" data-aos-duration="750" class="float-right p-3 my-3 text-white main-page popup nth-section right">
+        <div data-aos="fade-up-left" data-aos-duration="750" data-aos-anchor-placement="bottom-bottom" class="float-right p-3 my-3 text-white main-page popup nth-section right">
             <img class="float-left small-sq-img" src="./images/sample.jpg" alt="img here">
-            <h2 class="header float-left">Extracurriculars.</h2>
-            <div class="content float-left">
+            <h2 class="header text">Extracurriculars.</h2>
+            <div class="content text">
                 <p>Proin dapibus arcu sit amet pretium placerat amet lacus aliquam, iaculis dolor amet lacus aliquam odio nec est lobortis.</p>
                 <p>Quisque dignissim odio nec est lobortis imperdiet.</p>
                 <p>Nunc sit amet lacus aliquam, iaculis dolor quis, ultrices odio.</p>
@@ -65,10 +66,10 @@
             </div>
         </div>
 
-        <div data-aos="fade-up-right" data-aos-duration="750" class="float-left p-3 my-3 text-white main-page popup nth-section left">
+        <div data-aos="fade-up-right" data-aos-duration="750" data-aos-anchor-placement="bottom-bottom" class="float-left p-3 my-3 text-white main-page popup nth-section left">
             <img class="float-right small-sq-img" src="./images/sample.jpg" alt="img here">
-            <h2 class="header float-left">Hobbies.</h2>
-            <div class="content float-left">
+            <h2 class="header text">Hobbies.</h2>
+            <div class="content text">
                 <p>Proin dapibus arcu sit amet pretium placerat amet lacus aliquam, iaculis dolor amet lacus aliquam odio nec est lobortis.</p>
                 <p>Quisque dignissim odio nec est lobortis imperdiet.</p>
                 <p>Nunc sit amet lacus aliquam, iaculis dolor quis, ultrices odio.</p>
@@ -76,10 +77,10 @@
             </div>
         </div>
 
-        <div data-aos="fade-up-left" data-aos-duration="750" class="float-right p-3 my-3 text-white main-page popup nth-section right">
+        <div data-aos="fade-up-left" data-aos-duration="750" data-aos-anchor-placement="bottom-bottom" class="float-right p-3 my-3 text-white main-page popup nth-section right">
             <img class="float-left small-sq-img" src="./images/sample.jpg" alt="img here">
-            <h2 class="header float-left">Subheading 4</h2>
-            <div class="content float-left">
+            <h2 class="header text">Subheading 4</h2>
+            <div class="content text">
                 <p>Proin dapibus arcu sit amet pretium placerat amet lacus aliquam, iaculis dolor amet lacus aliquam odio nec est lobortis.</p>
                 <p>Quisque dignissim odio nec est lobortis imperdiet.</p>
                 <p>Nunc sit amet lacus aliquam, iaculis dolor quis, ultrices odio.</p>
@@ -88,9 +89,6 @@
         </div>
     </div>
 
-    <script>
-        AOS.init();
-    </script>
     <script>
         /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
         var prevScrollpos = window.pageYOffset;
