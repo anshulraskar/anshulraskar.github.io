@@ -49,7 +49,8 @@
 }
 
 .title-header {
-    max-height: 100vw;
+    max-height: 100vh;
+    min-height: 100vh;
     padding-top: 44vh;
     padding-bottom: 36vh;
     scroll-snap-align: start;
