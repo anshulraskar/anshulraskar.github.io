@@ -34,6 +34,7 @@
 .navbar {
     position: relative;
     /* display: flex; */
+    height: 5.95vh;
     width: 100vw;
     background-color: rgb(var(--theme-dark-shades));
     z-index: 9999;
@@ -46,9 +47,9 @@
 }
 
 .page-content {
-    position: absolute;
+    /* position: absolute;
     top: 0;
-    left: 0;
+    left: 0; */
     overflow-y: scroll;
     overflow-x: hidden;
     height: 100vh;
@@ -62,6 +63,16 @@
     padding-top: 44vh;
     padding-bottom: 36vh;
     scroll-snap-align: start;
+}
+
+.page-content::after {
+    content: "";
+    display: block
+}
+
+footer {
+    background-color: rgb(var(--theme-dark-shades));
+    color: rgb(var(--theme-light-shades));
 }
 
 .circuit {
@@ -165,6 +176,6 @@
 }
 
 body {
-    overflow: hidden;
+    /* overflow: hidden; */
     position: relative;
 }
