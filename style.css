@@ -34,7 +34,7 @@
 .navbar {
     position: relative;
     /* display: flex; */
-    height: 5.95vh;
+    height: 100%;
     width: 100vw;
     background-color: rgb(var(--theme-dark-shades));
     transform: translateY(-100%);
@@ -47,7 +47,15 @@
 
 .nav-container {
     position: fixed;
+    display: flex;
+    flex-direction: row;
     z-index: 9999;
+}
+
+@media (max-width: 800px) {
+    .nav-container {
+        flex-direction: column;
+    }
 }
 
 .page-content {
