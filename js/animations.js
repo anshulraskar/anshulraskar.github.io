@@ -10,27 +10,13 @@ pageContent.onscroll = function() {
     var currentScrollPos = pageContent.scrollTop;
 
     /* Navbar */
-    if (currentScrollPos > prevScrollPos) {
-        navbar.style.top = `-${navbar.clientHeight}px`;
-    } else {
-        navbar.style.top = "0";
-    }
+    // if (currentScrollPos > prevScrollPos) {
+    //     navbar.style.top = `-${navbar.clientHeight}px`;
+    // } else if (prevScrollPos + navbar.clientHeight > currentScrollPos) {
+    //     navbar.style.top = "0";
+    // }
     /* End of navbar */
 
-    /* Custom scrolling */
-    // if (currentScrollPos > prevScrollPos) {
-    //     /* scroll down */
-    //     if (currentElement == $(".title-header")) {
-    //         // pageContent.scrollTo({
-    //         //     top: nextElement.position().top - (nextElement.height() * 2 / 3),
-    //         //     behavior: "smooth"
-    //         // });
-    //     }
-    // } else {
-    //     /* scroll up */
-
-    // }
-    /* End of custom scrolling */
 
     /*  Fade scroll animation */
     $(".fade-scroll").each(function() {
