@@ -37,7 +37,6 @@
     height: 5.95vh;
     width: 100vw;
     background-color: rgb(var(--theme-dark-shades));
-    z-index: 9999;
     transform: translateY(-100%);
     transition: transform .5s cubic-bezier(.4, 0, .2, 1);
 }
@@ -46,15 +45,17 @@
     transform: translateY(0);
 }
 
+.nav-container {
+    position: fixed;
+    z-index: 9999;
+}
+
 .page-content {
-    /* position: absolute;
-    top: 0;
-    left: 0; */
     overflow-y: scroll;
     overflow-x: hidden;
     height: 100vh;
     scroll-snap-type: y mandatory;
-    /* scroll-behavior: smooth; */
+    scroll-behavior: smooth;
 }
 
 .title-header {
