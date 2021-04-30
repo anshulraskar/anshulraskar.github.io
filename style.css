@@ -80,6 +80,7 @@
 }
 
 footer {
+    clear: both;
     background-color: rgb(var(--theme-dark-shades));
     color: rgb(var(--theme-light-shades));
 }
