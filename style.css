@@ -66,7 +66,7 @@
     overflow-y: scroll;
     overflow-x: hidden;
     height: 100vh;
-    scroll-snap-type: y mandatory;
+    /* scroll-snap-type: y mandatory; */
     scroll-behavior: smooth;
 }
 
@@ -76,75 +76,6 @@
     padding-top: 44vh;
     padding-bottom: 36vh;
     scroll-snap-align: start;
-}
-
-@keyframes slideRight {
-    0% {
-        transform: translateX(-100%);
-    }
-    100% {
-        transform: none;
-    }
-}
-
-@keyframes slideDown {
-    0% {
-        transform: translateY(-100%);
-    }
-    100% {
-        transform: none;
-    }
-}
-
-@keyframes scaleUpSpin {
-    0% {
-        transform: scale(0) rotateZ(-180deg);
-    }
-    75% {
-        transform: scale(1.05) rotate(1deg);
-    }
-    100% {
-        transform: none;
-    }
-}
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-.load-slide-right {
-    animation-name: slideRight;
-    animation-duration: 0.5s;
-    transition-timing-function: ease-in;
-    animation-fill-mode: both;
-}
-
-.load-slide-down {
-    animation-name: slideDown;
-    animation-duration: 0.5s;
-    animation-delay: 1.25s;
-    transition-timing-function: ease-in;
-    animation-fill-mode: both;
-}
-
-.load-scale-up-spin {
-    animation-name: scaleUpSpin;
-    animation-duration: 0.75s;
-    animation-delay: 0.5s;
-    animation-fill-mode: both;
-    /* transition-timing-function: ease-in; */
-}
-
-.load-fade-in {
-    animation-name: fadeIn;
-    animation-duration: 0.5s;
-    animation-delay: 1s;
-    animation-fill-mode: both;
 }
 
 .page-content::after {
@@ -228,49 +159,6 @@ a.back-to-top:hover {
 .popup.right .small-img {
     margin-left: .5rem;
     margin-right: 2.5rem;
-}
-
-.fade-scroll {
-    opacity: 0;
-    transform: scale(0.9);
-    transition-delay: 0.25s;
-    transition-timing-function: cubic-bezier(0.2, 0.75, 0.3, 1);
-    transition-duration: 0.25s;
-}
-
-.fade-scroll.left {
-    transform: translate(-10vw, 0);
-}
-
-.fade-scroll.right {
-    transform: translate(10vw, 0);
-}
-
-.fade-scroll.up {
-    transform: scale(1);
-    opacity: 0;
-    transition-delay: 0.8s;
-}
-
-.fade-scroll.visible {
-    transform: translateX(0) scale(1);
-    opacity: 1;
-}
-
-.fade-scroll.passed {
-    opacity: 0;
-    transform: scale(0.9);
-    transition: opacity .8s;
-}
-
-.fade-scroll.passed.left {
-    transform: translateX(-50vw);
-    transition: all 0.05s cubic-bezier(0.18, 0.89, 0.32, 1.28), 1s;
-}
-
-.fade-scroll.passed.right {
-    transform: translateX(50vw);
-    transition: all 0.05s cubic-bezier(0.18, 0.89, 0.32, 1.28), 1s;
 }
 
 ::-webkit-scrollbar {
