@@ -18,8 +18,8 @@ pageContent.onscroll = function() {
     /*  Fade scroll animation */
     $(".fade-scroll").each(function() {
 
-        if ($(this).hasClass("title-header") && currentScrollPos <= prevScrollPos && $(this).position().top <= pageTop && $(this).position().top + $(window).height() >= pageTop) {
-            if ($(this).position().top + $(window).height() >= pageBottom / 3.5) {
+        if ($(this).hasClass("title-header") && $(this).position().top <= pageTop && $(this).position().top + $(window).height() >= pageTop) {
+            if ($(this).position().top + $(window).height() >= pageBottom / 3. && currentScrollPos <= prevScrollPos5) {
                 $(this).addClass("visible");
             }
         } else if (pageTop <= $(this).position().top && $(this).position().top + $(this).height() <= pageBottom) {
