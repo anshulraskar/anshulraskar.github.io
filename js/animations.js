@@ -3,8 +3,6 @@ var navbar = document.querySelector(".navbar");
 var prevScrollPos = pageContent.scrollTop;
 const pageTop = pageContent.scrollTop;
 const pageBottom = pageTop + $(window).height();
-var currentElement = $(".title-header");
-var nextElement = currentElement.next();
 
 pageContent.onscroll = function() {
     var currentScrollPos = pageContent.scrollTop;
@@ -16,12 +14,15 @@ pageContent.onscroll = function() {
         $(".navbar").removeClass("visible")
     }
     /* End of navbar */
-    console.log(currentScrollPos);
-
 
     /*  Fade scroll animation */
     $(".fade-scroll").each(function() {
-        if (pageTop <= $(this).position().top && $(this).position().top + $(this).height() <= pageBottom) {
+
+        if ($(this).hasClass("title-header") && currentScrollPos <= prevScrollPos && $(this).position().top <= pageTop && $(this).position().top + $(window).height() >= pageTop) {
+            if ($(this).position().top + $(window).height() >= pageBottom / 3.5) {
+                $(this).addClass("visible");
+            }
+        } else if (pageTop <= $(this).position().top && $(this).position().top + $(this).height() <= pageBottom) {
             $(this).addClass("visible");
             $(this).removeClass("passed");
 
