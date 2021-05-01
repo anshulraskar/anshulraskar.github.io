@@ -10,12 +10,13 @@ pageContent.onscroll = function() {
     var currentScrollPos = pageContent.scrollTop;
 
     /* Navbar */
-    // if (currentScrollPos > prevScrollPos) {
-    //     navbar.style.top = `-${navbar.clientHeight}px`;
-    // } else if (prevScrollPos + navbar.clientHeight > currentScrollPos) {
-    //     navbar.style.top = "0";
-    // }
+    if (currentScrollPos == 0) {
+        $(".navbar").addClass("visible");
+    } else {
+        $(".navbar").removeClass("visible")
+    }
     /* End of navbar */
+    console.log(currentScrollPos);
 
 
     /*  Fade scroll animation */
