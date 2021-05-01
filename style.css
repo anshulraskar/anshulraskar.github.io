@@ -45,6 +45,10 @@
     transform: translateY(0);
 }
 
+.navbar.visible {
+    transform: translateY(0);
+}
+
 .nav-container {
     position: fixed;
     display: flex;
@@ -62,7 +66,7 @@
     overflow-y: scroll;
     overflow-x: hidden;
     height: 100vh;
-    scroll-snap-type: y proximity;
+    scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
 }
 
@@ -84,6 +88,28 @@ footer {
     background-color: rgb(var(--theme-dark-shades));
     color: rgb(var(--theme-light-shades));
     scroll-snap-align: end;
+}
+
+footer a.links {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+footer a.links:hover {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+}
+
+footer a.links:active {
+    color: white;
+}
+
+a.back-to-top {
+    color: rgb(140, 101, 154);
+}
+
+a.back-to-top:hover {
+    color: rgba(140, 101, 154, 0.8);
+    text-decoration: none;
 }
 
 .circuit {
