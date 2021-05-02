@@ -52,6 +52,8 @@ $(".link").click(function(event) {
             window.location = redir;
 
         });
+    } else {
+        window.scrollTo(0, 0);
     }
 
 });
