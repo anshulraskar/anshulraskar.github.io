@@ -43,7 +43,12 @@ $(".link").click(function(event) {
     event.preventDefault();
     var redir = $(this).attr('href');
     var curURL = $(location).attr("href");
-    console.log(`redirsrt: ${redir.substr(1)} curURL: ${curURL}`);
+
+    if (curURL.contains("#")) {
+        console.log(curURL);
+        curURL = curURL.split("#")[0];
+        console.log(curURL);
+    }
 
     if (!curURL.endsWith(redir.substr(1))) {
         $(".nav-container").slideUp(250);
