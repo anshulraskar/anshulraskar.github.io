@@ -66,7 +66,7 @@
     overflow-y: scroll;
     overflow-x: hidden;
     height: 100vh;
-    /* scroll-snap-type: y mandatory; */
+    scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
 }
 
@@ -90,16 +90,16 @@ footer {
     scroll-snap-align: end;
 }
 
-footer a.links {
+footer a.link {
     color: rgba(255, 255, 255, 0.8);
 }
 
-footer a.links:hover {
+footer a.link:hover {
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
 }
 
-footer a.links:active {
+footer a.link:active {
     color: white;
 }
 
