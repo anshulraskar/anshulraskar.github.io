@@ -42,18 +42,11 @@ pageContent.onscroll = function() {
 $(".link").click(function(event) {
     event.preventDefault();
     var redir = $(this).attr('href');
-    var curURL = $(location).attr("href");
-
-    if (curURL.contains("#")) {
-        console.log(curURL);
-        curURL = curURL.split("#")[0];
-        console.log(curURL);
-    }
+    var curURL = $(location).attr("href").includes("#") ? $(location).attr("href").split("#")[0] : $(location).attr("href");
 
     if (!curURL.endsWith(redir.substr(1))) {
         $(".nav-container").slideUp(250);
         $(".page-content").fadeOut(250, function() {
-            // go to link when animation completes
             window.location = redir;
 
         });
