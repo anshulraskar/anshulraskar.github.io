@@ -53,7 +53,7 @@ $(".link").click(function(event) {
 
         });
     } else {
-        window.scrollTo(0, 0);
+        pageContent.scrollTo(0, 0);
     }
 
 });
