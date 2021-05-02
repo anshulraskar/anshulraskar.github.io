@@ -40,12 +40,14 @@ pageContent.onscroll = function() {
 
 $(".link").click(function(event) {
     event.preventDefault();
-    var href = $(this).attr('href');
+    var redir = $(this).attr('href');
+    var curURL = $(location).attr("href");
+    console.log(`redir: ${redir} curURL: ${curURL}`);
 
     $(".nav-container").slideUp(250);
     $(".page-content").fadeOut(250, function() {
         // go to link when animation completes
-        window.location = href;
+        window.location = redir;
 
     })
 
