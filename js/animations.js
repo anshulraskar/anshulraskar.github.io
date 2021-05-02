@@ -38,15 +38,20 @@ pageContent.onscroll = function() {
     prevScrollPos = currentScrollPos;
 }
 
+/* Link clicks */
 $(".link").click(function(event) {
     event.preventDefault();
-    var href = $(this).attr('href');
+    var redir = $(this).attr('href');
+    var curURL = $(location).attr("href").includes("#") ? $(location).attr("href").split("#")[0] : $(location).attr("href");
 
-    $(".nav-container").slideUp(250);
-    $(".page-content").fadeOut(250, function() {
-        // go to link when animation completes
-        window.location = href;
+    if (!curURL.endsWith(redir.substr(1))) {
+        $(".nav-container").slideUp(250);
+        $(".page-content").fadeOut(250, function() {
+            window.location = redir;
 
-    })
+        });
+    } else {
+        pageContent.scrollTo(0, 0);
+    }
 
 });
