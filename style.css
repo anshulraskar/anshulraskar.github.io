@@ -107,11 +107,11 @@ footer a.link:active {
     color: rgb(255, 255, 255);
 }
 
-a.back-to-top {
+footer a.back-to-top {
     color: rgb(140, 101, 154);
 }
 
-a.back-to-top:hover {
+footer a.back-to-top:hover {
     color: rgba(140, 101, 154, 0.8);
     text-decoration: none;
 }
