@@ -4,6 +4,7 @@ var prevScrollPos = pageContent.scrollTop;
 const pageTop = pageContent.scrollTop;
 const pageBottom = pageTop + $(window).height();
 
+/* Scroll animations */
 pageContent.onscroll = function() {
     var currentScrollPos = pageContent.scrollTop;
 
@@ -18,16 +19,18 @@ pageContent.onscroll = function() {
     /*  Fade scroll animation */
     $(".fade-scroll").each(function() {
 
-        if ($(this).hasClass("title-header") && $(this).position().top <= pageTop && $(this).position().top + $(window).height() >= pageTop) {
-            if ($(this).position().top + $(window).height() >= pageBottom / 3.5 /*&& currentScrollPos <= prevScrollPos*/ ) {
+        if ($(this).hasClass("title-header")) {
+            if ($(this).position().top + $(window).height() <= pageBottom * 2 / 3) {
+                $(this).removeClass("visible");
+            } else if ($(this).position().top <= pageTop && $(this).position().top + $(window).height() >= pageTop && $(this).position().top + $(window).height() >= pageBottom / 3.5 ||
+                pageTop <= $(this).position().top && $(this).position().top + $(window).height() <= pageBottom) {
                 $(this).addClass("visible");
             }
-        }
-        if (pageTop <= $(this).position().top && $(this).position().top + $(this).height() <= pageBottom) {
+        } else if (pageTop <= $(this).position().top && $(this).position().top + $(this).height() <= pageBottom) {
             $(this).addClass("visible");
             $(this).removeClass("passed");
 
-        } else if ($(this).position().top + $(this).height() <= pageBottom && !$(this).hasClass("title-header")) {
+        } else if ($(this).position().top + $(this).height() <= pageBottom) {
             $(this).addClass("passed");
         } else {
             $(this).removeClass("visible");
@@ -36,7 +39,8 @@ pageContent.onscroll = function() {
     /* End of fade scroll animation */
 
     prevScrollPos = currentScrollPos;
-}
+};
+/* End of scroll animations */
 
 /* Link clicks */
 $(".link").click(function(event) {
@@ -55,3 +59,4 @@ $(".link").click(function(event) {
     }
 
 });
+/* End of link clicks */
