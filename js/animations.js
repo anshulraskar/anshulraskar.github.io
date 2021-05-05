@@ -32,6 +32,7 @@ pageContent.onscroll = function() {
 
         } else if ($(this).position().top + $(this).height() <= pageBottom) {
             $(this).addClass("passed");
+            $(this).removeClass("visible");
         } else {
             $(this).removeClass("visible");
         }
