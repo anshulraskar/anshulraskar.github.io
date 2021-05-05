@@ -116,12 +116,16 @@ footer a.link {
 }
 
 footer a.link.active {
-    color: rgba(255, 255, 255, 0.75);
+    color: rgba(255, 255, 255, 0.85);
 }
 
 footer a.link:hover {
-    color: rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.7);
     text-decoration: none;
+}
+
+footer a.link.active:hover {
+    color: rgba(255, 255, 255, 0.85);
 }
 
 footer a.link:active {
