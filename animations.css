@@ -16,6 +16,24 @@
     }
 }
 
+@keyframes slideLeft {
+    0% {
+        transform: translateX(250%);
+    }
+    100% {
+        transform: none;
+    }
+}
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(-250%);
+    }
+    100% {
+        transform: none;
+    }
+}
+
 @keyframes scaleUpSpin {
     0% {
         transform: scale(0) rotateZ(-180deg);
@@ -48,6 +66,22 @@
     animation-name: slideDown;
     animation-duration: 0.5s;
     animation-delay: 1.25s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;
+}
+
+.load-slide-left {
+    animation-name: slideLeft;
+    animation-duration: 0.5s;
+    animation-delay: 1s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;
+}
+
+.load-slide-right {
+    animation-name: slideRight;
+    animation-duration: 0.5s;
+    animation-delay: 1s;
     transition-timing-function: ease-in;
     animation-fill-mode: both;
 }
