@@ -65,16 +65,21 @@
     overflow-y: scroll;
     overflow-x: hidden;
     height: 100vh;
-    /* scroll-snap-type: y mandatory; */
     scroll-behavior: smooth;
 }
 
 .title-header {
+    padding-top: 44vh;
+    scroll-snap-align: start;
+}
+
+.title {
+    margin-top: 5%;
+}
+
+.title-header.full {
     max-height: 100vh;
     min-height: 100vh;
-    padding-top: 44vh;
-    padding-bottom: 36vh;
-    scroll-snap-align: start;
 }
 
 .page-content::after {
@@ -82,7 +87,24 @@
     display: block
 }
 
+.contact {
+    border-radius: 3px;
+    width: 33%;
+    margin: 0 auto;
+}
+
+.submit.btn {
+    background-color: rgb(var(--theme-light-accent2));
+}
+
+.center {
+    margin: 0 auto !important;
+    display: flex !important;
+    justify-content: center !important;
+}
+
 footer {
+    position: relative;
     clear: both;
     background-color: rgb(var(--theme-dark-shades));
     color: rgb(var(--theme-light-shades));
@@ -115,6 +137,21 @@ footer a.back-to-top:hover {
     text-decoration: none;
 }
 
+.socials a {
+    color: rgb(var(--theme-dark-shades));
+}
+
+.socials a:hover {
+    color: rgba(var(--theme-dark-shades), 0.8);
+}
+
+.back-to-top {
+    position: absolute;
+    left: 90%;
+    bottom: 50%;
+    font-size: 2rem;
+}
+
 .circuit {
     background-image: linear-gradient(rgba(var(--theme-main), .5), rgba(var(--theme-main), .5)), url(./images/circuit\ board.jpg!d);
     background-size: cover;
@@ -133,18 +170,18 @@ footer a.back-to-top:hover {
     background-color: rgba(var(--theme-light-accent2), .7);
 }
 
-.main-page.popup .header {
+.header {
     font-weight: 300;
     font-size: 4rem;
 }
 
-.main-page.popup .content {
+.content {
     font-weight: 375;
     font-size: 1.8rem;
     line-height: 1.8;
 }
 
-.main-page.popup .text {
+.text {
     font-family: 'Segoe UI';
 }
 
