@@ -91,13 +91,19 @@
     animation-duration: 0.75s;
     animation-delay: 0.5s;
     animation-fill-mode: both;
-    /* transition-timing-function: ease-in; */
 }
 
 .load-fade-in {
     animation-name: fadeIn;
     animation-duration: 0.5s;
     animation-delay: 1s;
+    animation-fill-mode: both;
+}
+
+.load-fade-in-fast {
+    animation-name: fadeIn;
+    animation-duration: 0.5s;
+    animation-delay: 0.5s;
     animation-fill-mode: both;
 }
 
