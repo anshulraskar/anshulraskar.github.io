@@ -26,13 +26,14 @@ pageContent.onscroll = function() {
                 pageTop <= $(this).position().top && $(this).position().top + $(window).height() <= pageBottom) {
                 $(this).addClass("visible");
             }
-        } else if (pageTop <= $(this).position().top && $(this).position().top + $(this).height() <= pageBottom) {
+        } else if ($(this).position().top <= pageBottom * 0.7 && $(this).position().top >= pageTop) {
             $(this).addClass("visible");
             $(this).removeClass("passed");
 
         } else if ($(this).position().top + $(this).height() <= pageBottom) {
             $(this).addClass("passed");
             $(this).removeClass("visible");
+
         } else {
             $(this).removeClass("visible");
         }

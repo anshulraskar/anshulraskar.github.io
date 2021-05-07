@@ -109,7 +109,6 @@
 
 .fade-scroll {
     opacity: 0;
-    transform: scale(0.9);
     transition-timing-function: cubic-bezier(0.2, 0.75, 0.3, 1);
     transition-duration: 0.25s;
 }
@@ -123,19 +122,17 @@
 }
 
 .fade-scroll.up {
-    transform: scale(1);
     opacity: 0;
     transition-delay: 0.2s;
 }
 
 .fade-scroll.visible {
-    transform: translateX(0) scale(1);
+    transform: translateX(0);
     opacity: 1;
 }
 
 .fade-scroll.passed {
     opacity: 0;
-    transform: scale(0.9);
     transition: opacity .8s;
 }
 
